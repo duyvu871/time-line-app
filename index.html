@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/50ecca59bf.js" crossorigin="anonymous"></script>
+
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200&display=swap" 
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="./app/info.js"></script>
+</head>
+<body>
+    <section class="section intro">
+        <h1>Horizontal Event</h1>
+        <div class="container">
+          <div class="adding-time adding">
+            <label for="time">Time:</label>
+            <input type="text" class="time" id="time" placeholder="Nhập sự kiện" name="time">
+            <span class="checked"></span>
+          </div>
+          <div class="adding-main-event adding">
+            <label for="main-event">Event:</label>
+            <textarea name="main-event" id="main-event" cols="30" rows="10" class="main-event" placeholder="Nhập sự kiện" name="main-event"></textarea>
+            <span class="checked"></span>
+          </div>
+          <div class="adding-horizontal adding">
+            <label for="horizontal">Event:</label>
+            <textarea name="horizontal" id="horizontal" cols="30" rows="10" class="horizontal" placeholder="Nhập sự kiện" name="horizontal"></textarea>
+            <span class="checked"></span>
+          </div>
+        </div>
+          <button class="button-icon">
+            <span>Add Event</span>
+            <i class="fa fa-long-arrow-right"></i>
+          </button>
+      </section>
+      
+      <section class="timeline">
+        <ol></ol>
+        
+        <div class="arrows">
+          <button class="arrow arrow__prev disabled" disabled>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_prev.svg" alt="prev timeline arrow">
+          </button>
+          <button class="arrow arrow__next">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/arrow_next.svg" alt="next timeline arrow">
+          </button>
+        </div>
+      </section>
+      <script src="./app/app.js"></script>
+      <script src="./app/timelineinfor.js"></script>
+</body>
+</html>
+
+ 
