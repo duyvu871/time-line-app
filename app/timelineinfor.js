@@ -89,8 +89,9 @@ const checkedForm = () => {
 }
 btn.addEventListener('click',clickEvent)
 document.addEventListener('DOMContentLoaded',()=>{
-    newRequest.getReq('http://localhost:3000/evensdbt',{})
-    .then(result => {
-        datas.forEach(v =>  $('.timeline ol').appendChild(createElement(htmls(v))))
-    })
-})
+    datas.forEach(v =>  $('.timeline ol').appendChild(createElement(htmls(v))))
+//     newRequest.getReq('http://localhost:3000/evensdbt',{})
+//     .then(result => {
+//         datas.forEach(v =>  $('.timeline ol').appendChild(createElement(htmls(v))))
+//     })
+ })
